@@ -1,0 +1,215 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.page{
+	position: relative;/*相对定位，内部的元素以某个元素为参照来定位*/
+}
+img{
+	position: absolute;/*将所有的图片设置绝对定位*/
+}
+.page1-Buildings{
+	width: 100%;/*设置成百分比，考虑到移动端的适配问题*/
+	height: 30%;
+	bottom: 0;
+	display: none;
+}
+.page1-elements{
+	width: 100%;
+	height: 100%;
+	animation: zooming 2s linear infinite;
+}
+.page1-clouds{
+	width: 90%;
+	height: 90%;
+	animation: zooming 2s linear infinite;
+}
+.page1-flight{
+	width:0px;
+	/*height: 20%;*/
+	bottom: 32%;
+	left: 15%;
+	animation: flight 4s linear infinite;
+}
+@keyframes flight{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.2);}
+	100%{transform: scale(1);}
+}
+.page1-flower1{
+	z-index: 2;/*z轴坐标，默认是1，设置为比1大*/
+	width: 20%;
+	height: 20%;
+	top: 14%;
+	left: 10%;
+	animation: rotate 2s linear infinite;
+}
+.page1-txt{
+	width: 60%;
+	top:14%;
+	left: 21%;
+	
+}
+.page1-flower2{
+	z-index: 2;/*z轴坐标，默认是1，设置为比1大*/
+	width: 20%;
+	top: 27%;
+	right: 19%;
+	animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+	0%{transform: rotate(0deg);}
+	25%{transform: rotate(30deg);}
+	50%{transform: rotate(0deg);}
+	75%{transform: rotate(-30deg);}
+	100%{transform: rotate(0deg);}
+}
+@keyframes zooming{
+	0%{transform: scale(1);}
+	50%{transform: scale(0.9);}
+	100%{transform: scale(1);}
+}
+.page1-stars{
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 5%;
+}
+.page2-bg{
+	width: 100%;
+	height: 100%;
+}
+.page2-it{
+	width: 60%;
+	right: 0;
+	bottom: 25%;
+	display: none;
+}
+.page2-farm{
+	width: 60%;
+	right: 0;
+	top: 35%;
+	display: none;
+}
+.page2-star{
+	width: 100%;
+	height: 100%;
+}
+.page1{
+	background: #00CCFF;
+}
+
+.page2{background: antiquewhite;}
+.page3{
+	background: blueviolet;
+}
+.page3-bg{
+	width: 100%;
+	height: 100%;
+}
+.page3-station{
+	width: 100%;
+	bottom: 0;
+	z-index: 2;
+}
+.page3-bus {
+    z-index: 2;
+    width: 61%;
+    bottom: 10%;
+}
+.page3-early{
+	top: 0;
+	left: 0;
+	width: 40%;
+	/*display: none;*/
+}
+.page3-title{
+	z-index: 2;
+	top: 10%;
+	left: 0;
+	width: 40%;
+	/*display: none;*/
+}
+.page3-avatar {
+    z-index: 3;
+    width: 33%;
+    right: -8px;
+    bottom: 15%;
+}
+.page3-avatar2{
+	top: 22%;
+	z-index: 2;
+	right: 26%;
+	display: none;
+}
+/*.page3-wall2{
+	bottom: 0;
+	right: 0;
+	width: 80%;
+}*/
+.page3-wall2{
+	right: 0;
+	bottom: 2%;
+	height: 65%;
+	width: 41%;
+	display: none;
+}
+.page3-space2{
+	width: 0;
+	left: 10%;
+	top: 25%;
+	/*display: none;*/
+	
+}
+.page3-where2{
+	width: 0;
+	bottom: 8%;
+	/*display: none;*/
+}
+.page4{
+	background: gold;
+	/*top: 100%;页面切换时要top值*/
+}
+.page4-BG{
+	width: 100%;
+	height: 100%;
+}
+.page4-lightoff{
+	z-index: 2;
+	left: 3%;
+	height: 60%;
+	bottom: 1%;
+	/*display: none;*/
+}
+.page4-corner{
+	z-index: 2;
+	right: 0;
+	top: 15%;
+}
+.page4-guide{
+	width: 50%;
+	z-index: 2;
+	right: 29%;
+	top: 47%;
+}
+.page4-bg2{
+	width: 100%;
+	height: 100%;
+}
+.page4-on{
+	z-index: 2;
+	left: 3%;
+	height: 70%;
+	bottom: 1%;
+	/*display: none;*/
+}
+.page4-knowyou{
+	top: 33%;
+	left: 20%;
+	width: 46%;
+	z-index: 2;
+}
+.content{
+	position: absolute;
+	
+}
